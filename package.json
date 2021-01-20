@@ -4,7 +4,10 @@
   "description": "The official JavaScript client for the Phoenix web framework.",
   "license": "MIT",
   "main": "./priv/static/phoenix.js",
-  "module": "./assets/js/phoenix.js",
+  "exports": {
+    "require": "./priv/static/phoenix.js",
+    "import": "./assets/js/phoenix.mjs"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/phoenixframework/phoenix.git"
